@@ -21,3 +21,4 @@ class DefaultController {
         return new Response('Simple! Easy! Great!');
     }
 }
+//https://symfony.com/doc/current/quick_tour/flex_recipes.html
