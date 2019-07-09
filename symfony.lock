@@ -50,6 +50,9 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+    "symfony/asset": {
+        "version": "v4.3.2"
+    },
     "symfony/cache": {
         "version": "v4.3.2"
     },
@@ -162,6 +165,9 @@
             "./config/packages/test/routing.yaml",
             "./config/routes.yaml"
         ]
+    },
+    "symfony/security-core": {
+        "version": "v4.3.2"
     },
     "symfony/service-contracts": {
         "version": "v1.1.5"

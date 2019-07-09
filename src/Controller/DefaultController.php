@@ -2,23 +2,25 @@
 
 namespace App\Controller;
 
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class DefaultController {
+class DefaultController extends AbstractController {
 
     /**
      * @Route("/hello/{name}")
      */
     public function index($name) {
-        return new Response("Hello $name!!");
+        return $this->render('default/index.html.twig', [
+            'name' => $name
+        ]);
     }
 
-    /**
+    /*
      * @Route("/simplicity")
      */
     public function simple() {
-        return new Response('Simple! Easy! Great!');
+        //return new Response('Simple! Easy! Great!');
     }
 }
 //https://symfony.com/doc/current/quick_tour/flex_recipes.html
