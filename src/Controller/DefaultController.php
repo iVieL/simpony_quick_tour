@@ -22,5 +22,15 @@ class DefaultController extends AbstractController {
     public function simple() {
         //return new Response('Simple! Easy! Great!');
     }
+
+    /**
+     * @Route("api/hello/{name}")
+     */
+    public function apiExample($name) {
+        return $this->json([
+            'name' => $name,
+            'symfony' => 'rocks'
+        ]);
+    }
 }
 //https://symfony.com/doc/current/quick_tour/flex_recipes.html
